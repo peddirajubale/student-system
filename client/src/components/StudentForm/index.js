@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import {Container, Title, Form, Input, Button, Table,Th,Td,ActionButtons} from './styledComponents'
 
-const API_URL = "http://localhost:5005/api/students"; 
+const API_URL = "https://student-system-backend-9m1w.onrender.com"; 
 
 function StudentForm() {
   const [students, setStudents] = useState([]);

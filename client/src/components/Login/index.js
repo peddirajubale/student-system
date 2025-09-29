@@ -16,7 +16,7 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post("https://student-system-backend-9m1w.onrender.com", formData);
+      const res = await axios.post("https://student-system-backend-9m1w.onrender.com/api/auth/login", formData);
       alert("Login successful!");
       localStorage.setItem("studentToken", res.data.token);
       navigate("/student-form")
